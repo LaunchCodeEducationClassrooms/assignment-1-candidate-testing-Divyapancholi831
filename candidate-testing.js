@@ -8,7 +8,7 @@ let candidateName="";
 let question="Who was the first american woman in space? ";
 let correctAnswer="Sally Ride";
 let candidateAnswer="";
-let questions=["Who was the first american woman in space? ","True or False:5000 meters=5 kilometers ","(5+3)/2*10=? ","Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ","What is the minimum crew size for the ISS? "];
+let questions=['Who was the first american woman in space? ','True or False:5000 meters=5 kilometers ','(5+3)/2*10=? ',"Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ",'What is the minimum crew size for the ISS? '];
 let correctAnswers=["Sally Ride","true","40","Trajectory","3"];
 let candidateAnswers=[];
 
@@ -55,8 +55,8 @@ function gradeQuiz(candidateAnswers) {
     rightAnswer+=1;
   }
 
-
-  let grade=rightAnswer/questions.length*100;
+  let numOfQuestions=questions.length
+  let grade=rightAnswer/numOfQuestions*100;
   if(grade<80)
   {
     console.log(`>>> Overall Grade: ${grade}% (${rightAnswer} of ${questions.length} responses correct)<<<\n>>> Status: FAILED <<<`)
