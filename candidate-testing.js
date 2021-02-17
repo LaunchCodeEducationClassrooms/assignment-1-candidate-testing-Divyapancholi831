@@ -24,7 +24,7 @@ function askQuestion() {
   let i=0;
   while(i<questions.length)
   {
-    candidateAnswers.push(console.log(i+1)+input.question(questions[i]));
+    candidateAnswers.push(input.question(questions[i]));
     console.log(`Your Answer: ${candidateAnswers[i]}\nCorrect Answer: ${correctAnswers[i]}\n`)
     i++;
   }
