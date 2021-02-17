@@ -59,11 +59,11 @@ function gradeQuiz(candidateAnswers) {
   let grade=rightAnswer/questions.length*100;
   if(grade<80)
   {
-    console.log(`>>> Overall Grade: ${grade}% (${rightAnswer} out of ${questions.length} resposes correct)<<<\n>>> Status: FAILED <<<`)
+    console.log(`>>> Overall Grade: ${grade}% (${rightAnswer} of ${questions.length} responses correct)<<<\n>>> Status: FAILED <<<`)
   }
   else
   {
-    console.log(`>>> Overall Grade: ${grade}% (${rightAnswer} out of ${questions.length} responses correct)<<<\n>>> Status: PASSED <<<`)
+    console.log(`>>> Overall Grade: ${grade}% (${rightAnswer} of ${questions.length} responses correct)<<<\n>>> Status: PASSED <<<`)
   }
   
 
